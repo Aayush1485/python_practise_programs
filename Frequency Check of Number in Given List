@@ -1,0 +1,40 @@
+
+import random
+
+rand_list=[]
+n=10
+rand_list_length=10
+count_dictionary={}
+values=[]
+for i in range(n):
+    rand_list.append(random.randint(3,9))
+print(rand_list)
+
+
+def check_num_frequency(rand_list):
+  print("rand_list====>",rand_list)
+  for i in range(len(rand_list)):
+    # print("printing values of iiii---",i)
+    val=rand_list[i]
+    # print("vallss----",val)
+    if count_dictionary.__contains__(val):
+        print("passing the pass")
+        pass
+    else:
+        
+        for n in range(0,rand_list_length):
+        #   print("printing values of num--",n)
+          if int(rand_list[n])==int(val):
+            # print("found value",val)
+            values.append(val)
+            count_dictionary[val]=values.count(val)     
+          else:
+            # print("value on index---",val)
+            continue
+            
+    
+      
+      
+    
+check_num_frequency(rand_list)
+print(count_dictionary)
